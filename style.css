@@ -1,0 +1,46 @@
+:root {
+  --bg: #F6F7FB;
+  --surface: #FFFFFF;
+  --text: #0B1530;
+  --muted: #5B6785;
+  --line: #E2E6F0;
+  --pink: #C8146C;
+  --navy: #0B1A5E;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #03102B;
+    --surface: #0E1C36;
+    --text: #F5F7FA;
+    --muted: #9AA6C4;
+    --line: #1A2B4D;
+    --pink: #F0609F;
+    --navy: #FFFFFF;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.75 "Tajawal", "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+.wrap { max-width: 760px; margin: 0 auto; padding: 0 16px; }
+.top { background: var(--surface); border-bottom: 1px solid var(--line); }
+.top .wrap { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 16px; padding-block: 12px; }
+.brand { margin: 0; font-weight: 800; font-size: 1.15rem; }
+.brand .first { color: var(--navy); }
+.brand .second { color: var(--pink); }
+.lang { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: .95rem; }
+a { color: var(--pink); }
+main { padding-block: 24px 8px; }
+article { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 8px 20px 16px; }
+h1 { font-size: 1.6rem; line-height: 1.3; margin: 16px 0 4px; }
+h2 { font-size: 1.2rem; margin: 28px 0 6px; color: var(--pink); }
+h3 { font-size: 1.02rem; margin: 18px 0 4px; }
+.meta { color: var(--muted); margin-top: 0; }
+ul, ol { padding-inline-start: 1.3em; }
+li { margin-block: 4px; }
+hr { border: 0; height: 24px; }
+.foot { color: var(--muted); font-size: .9rem; padding-block: 16px 32px; text-align: center; }
